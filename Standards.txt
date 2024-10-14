@@ -1,0 +1,7 @@
+PRIMARY COLOR:
+
+BODY color:
+white : #f6f6f6
+
+title font: 
+Playfair

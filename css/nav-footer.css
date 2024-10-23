@@ -29,6 +29,12 @@ button {
     font-family: var(--primary-font);
 }
 
+/* Background Image 
+    background-image: url('../images/background6.jpeg');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+*/
+
 html {
     font-size: 62.5%; /* 10px */
 }

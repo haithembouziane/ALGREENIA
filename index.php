@@ -4,34 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algreenia</title>
-    <link rel="stylesheet" href="../css/home.css">
+    <!-- <meta http-equiv="refresh" content="10"> Each two seconds, the page will refresh -->
+    <link rel="stylesheet" href="./css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
 </head>
+
 <body>
-
-    <header class="header glass-theme sp_between">
-        <a href="#" class="logo"><h1>ALGREENIA</h1></a>
-
-        <nav class="navbar sp_between">
-            <div id="nav-links">
-                <a href="#" class="links">Home</a>
-                <a href="#" class="links">About us</a>
-                <a href="#" class="links">Projects</a>
-                <a href="#" class="links">Services</a>
-                <a href="#" class="links">Contact</a>
-            </div>
-            <div style="border-left: 2px solid white; width: 2px; height: 80%;"></div>
-            <div id="btn-nav" class="sp_between">
-                <button id="btn-login">Log in</button>
-                <button id="btn-signup">Sign up</button>
-            </div>
-        </nav>
-
-    </header>
-
+    <?php
+        include "./includes/nav.php" 
+    ?>
     <div class="page">
         <section id="hero" class=" glass-theme">
             <h1 class="section-title">Where every tree tells a story...</h1>
@@ -55,7 +40,7 @@
             <!-- Some images provided below are temporary -->
             <div class="card-container">
                 <div class="card ">
-                    <img src="../images/log-in.jpg" alt="Sign-up Image" class="card-img">
+                    <img src="./images/log-in.jpg" alt="Sign-up Image" class="card-img">
                     <div class="card-content">
                         <h3 class="card-title"> Sign Up and Join the Community</h3>
                         <p class="card-description">Create an account to become part of Algreenia, gaining access to afforestation tools and projects.</p>
@@ -63,7 +48,7 @@
                     </div>
                 </div>
                 <div class="card ">
-                    <img src="../images/afforestation.png" alt="Afforestaion Image" class="card-img">
+                    <img src="./images/afforestation.png" alt="Afforestaion Image" class="card-img">
                     <div class="card-content">
                         <h3 class="card-title">Discover Afforestation Projects</h3>
                         <p class="card-description">Explore ongoing afforestation efforts and projects you can join based on location or interest.</p>
@@ -71,7 +56,7 @@
                     </div>
                 </div>
                 <div class="card ">
-                    <img src="../images/project.jpg" alt="Project Image" class="card-img" height="300px">
+                    <img src="./images/project.jpg" alt="Project Image" class="card-img" height="300px">
                     <div class="card-content">
                         <h3 class="card-title">Choose a Project to Support</h3>
                         <p class="card-description">Select from a list of afforestation projects that match your preferences, whether through planting trees or donating.</p>
@@ -79,7 +64,7 @@
                     </div>
                 </div>
                 <div class="card ">
-                    <img src="../images/treeIdentification.jpg" alt="Tree Identification Image" class="card-img">
+                    <img src="./images/treeIdentification.jpg" alt="Tree Identification Image" class="card-img">
                     <div class="card-content">
                         <h3 class="card-title">Get Personalized Tree Recommendations</h3>
                         <p class="card-description">Based on your location and preferences, the platform recommends tree species suitable for planting, enhancing the sustainability of local ecosystems.</p>
@@ -87,7 +72,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../images/treeStats.webp" alt="Track Image" class="card-img">
+                    <img src="./images/treeStats.webp" alt="Track Image" class="card-img">
                     <div class="card-content">
                         <h3 class="card-title">Track Your Impact and Progress</h3>
                         <p class="card-description">After joining a project, monitor your personal and community contributions, including the number of trees planted and the overall impact.</p>
@@ -95,7 +80,7 @@
                     </div>
                 </div>
                 <div class="card ">
-                    <img src="../images/social-media-post.jpeg" alt="Media Image" class="card-img">
+                    <img src="./images/social-media-post.jpeg" alt="Media Image" class="card-img">
                     <div class="card-content">
                         <h3 class="card-title">Share Your Achievements </h3>
                         <p class="card-description">Share your progress on social media, inspiring friends, family, and others to join Algreenia’s mission and participate in afforestation efforts.</p>
@@ -151,17 +136,17 @@
             </p>
             <div class="story-container">
                 <div class="story-card">
-                    <img class="story-img" src="path/to/image1.jpg" alt="Story Image">
+                    <img class="story-img" src="./images/story1.jpeg" alt="Story Image">
                     <h3 class="story-title">Community Greening Initiative in Oran</h3>
                     <p class="story-description">"Our neighborhood has transformed into a green oasis thanks to Algreenia's support and guidance!" – Participant Name</p>
                 </div>
                 <div class="story-card">
-                    <img class="story-img" src="path/to/image2.jpg" alt="Story Image">
+                    <img class="story-img" src="./images/story2.jpeg" alt="Story Image">
                     <h3 class="story-title">Restoring Biodiversity in Djelfa</h3>
                     <p class="story-description">"Thanks to the afforestation efforts, we have seen a significant return of local wildlife." – Participant Name</p>
                 </div>
                 <div class="story-card">
-                    <img class="story-img" src="path/to/image2.jpg" alt="Story Image">
+                    <img class="story-img" src="./images/story3.jpeg" alt="Story Image">
                     <h3 class="story-title">Restoring Biodiversity in Djelfa</h3>
                     <p class="story-description">"Thanks to the afforestation efforts, we have seen a significant return of local wildlife." – Participant Name</p>
                 </div>
@@ -253,57 +238,13 @@
             </div>
         </section>
 
-    </div>
+    </div>  
 
-    <footer class="footer glass-theme">
-        <div class="footer-container">
-            <!-- About Us Section -->
-            <div class="footer-section about-us">
-                <h3 class="footer-title">About Algreenia</h3>
-                <p class="footer-text">
-                    Algreenia connects communities to afforestation efforts, providing tools to restore and preserve Algeria's green spaces for a sustainable future.
-                </p>
-            </div>
-    
-            <!-- Quick Links Section -->
-            <div class="footer-section quick-links">
-                <h3 class="footer-title">Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="#afforestation-projects">Afforestation Projects</a></li>
-                    <li><a href="#personalized-recommendations">Tree Recommendations</a></li>
-                    <li><a href="#impact-tracking">Impact Tracking</a></li>
-                    <li><a href="#irrigation-planning">Irrigation Planning</a></li>
-                    <li><a href="#tree-identification">Tree Identification</a></li>
-                </ul>
-            </div>
-    
-            <!-- Contact Section -->
-            <div class="footer-section contact-us">
-                <h3 class="footer-title">Contact Us</h3>
-                <p class="footer-text">Email: info@algreenia.dz</p>
-                <p class="footer-text">Phone: +213 123 456 789</p>
-                <p class="footer-text">Address: Sidi Abdellah Campus Algiers, Algeria</p>
-            </div>
-    
-            <!-- Social Media Links -->
-            <div class="footer-section social-media">
-                <h3 class="footer-title">Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Copyright and Credits -->
-        <div class="footer-bottom">
-            <p>&copy; 2024 Algreenia. All rights reserved. | Designed with love by the Algreenia Team.</p>
-        </div>
-    </footer>
-    
+    <?php
+        include "./includes/footer.php" 
+    ?>
 
-    <script src="../Scripts/home.js"></script>
+    <script src="./Scripts/home.js"></script>
+
 </body>
 </html>

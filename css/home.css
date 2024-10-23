@@ -80,6 +80,10 @@ body {
     width: 100%;
 }
 
+.page > * > * {
+    margin-bottom: 3rem;
+}
+
 .section-title {
     color: var(--primary-color);
     font-size: 7.5rem;
@@ -186,7 +190,6 @@ body {
 }
 
 #hero > * {
-    margin-bottom: 3rem;
     width: 75%;
 }
 
@@ -265,10 +268,6 @@ body {
 
 /* Projects section */
 
-#projects > * {
-    margin-bottom: 3rem;
-}
-
 
 
 /* Card container */
@@ -343,11 +342,19 @@ body {
     background-color:rgb(17, 88, 17)
 }
 
+/* Carousel Project cards */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #fff; /* Customize arrow color */
+}
+
+.swiper-pagination-bullet {
+    background-color: #fff; /* Customize pagination bullet color */
+}
+
+
 /* Success Stories and Testimonials Section */
 
-#success-stories > * {
-    margin-bottom: 3rem;
-}
 
 /* Success Stories Section */
 .success-stories-section {
@@ -356,12 +363,17 @@ body {
     color: white; /* Ensure text is readable against the dark background */
 }
 
+.resource-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .story-container {
     display: flex; /* Use flexbox for a horizontal layout */
     flex-wrap: wrap; /* Allow items to wrap for smaller screens */
     justify-content: center; /* Center the stories */
-    gap: 20px; /* Space between cards */
+    gap: 4rem; /* Space between cards */
 }
 
 .story-card {
@@ -416,6 +428,10 @@ body {
     font-size: 28px;
     color: #3A6F7A;
     margin-bottom: 20px;
+}
+
+.resource-container {
+    display: flex;
 }
 
 .resource-item {
@@ -604,18 +620,18 @@ body {
 .footer-section {
     flex: 1;
     min-width: 250px;
-    padding: 20px;
+    padding: 50px;
 }
 
 .footer-title {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 15px;
 }
 
 .footer-text {
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.8;
 }
 
@@ -631,7 +647,7 @@ body {
 .footer-links a {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     transition: color 0.3s;
 }
 
@@ -653,10 +669,10 @@ body {
 .footer-bottom {
     text-align: center;
     padding: 20px 0;
-    background-color: rgba(0, 51, 25, 0.7);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.7);
     width: 100%;
+    margin-top: 20px;
 }
 
 

@@ -2,16 +2,21 @@
 :root {
     --primary-color: rgb(55, 137, 55);
     --white: #fff;
-    --title-font: "Playfair";
-    --subtitle-font: "Ubuntu";
+    --primary-font: "Ubuntu";
 }
+
+/* Background Image 
+    background-image: url('../images/background6.jpeg');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+*/
 
 /*general styling*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--subtitle-font);
+    font-family: var(--primary-font);
 }
 
 a {
@@ -26,18 +31,17 @@ button {
     border: none;
     outline: none;
     color: var(--white);
+    font-family: var(--primary-font);
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; /* 10px */
 }
 
 body {
     min-height: 100vh;
-    background-image: url('../images/background6.jpeg');
-    background-repeat: repeat-y;
-    background-size: 100% auto;
-    font-family: var(--subtitle-font);
+    font-family: var(--primary-font);
+    background-color: rgb(1, 33, 1); /* temporary */
 }
 
 /*standard CLASSES*/
@@ -57,7 +61,6 @@ body {
     -webkit-backdrop-filter: blur(18px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    width: 100%;
 }
 
 .page {
@@ -70,10 +73,25 @@ body {
     align-items: center;
 }
 
-.page>* {
-    margin-bottom: 40px;
-    padding: 2rem;
+.page > * {
+    margin-bottom: 4rem;
+    padding: 3rem;
     max-width: 1200px;
+    width: 100%;
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-size: 7.5rem;
+    font-weight: 900;
+    text-shadow: 0 1px 15px black;
+}
+
+.short-description {
+    color: white;
+    font-size: 2rem;
+    font-family: var(--primary-font);
+    text-align: justify;
 }
 
 /*to be replaced with a real logo*/
@@ -88,30 +106,32 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    padding: 2rem;
+    padding: 20px;
     margin: 20px auto;
     z-index: 100;
 }
+
 .header, .page {
     width: 90%;
 }
 
 .navbar {
     width: 80%;
+    height: 50px;
     justify-content: space-around;
 }
 
 #nav-links {
     display: flex;
     justify-content: space-between;
-    width: 65%;
+    width: 60%;
 }
 
 .links {
     color: var(--white);
     font-size: 2rem;
     font-weight: 500;
-    font-family: var(--subtitle-font);
+    font-family: var(--primary-font);
     transition: color 0.3s;
     position: relative;
 }
@@ -136,15 +156,14 @@ body {
 
 
 #btn-nav {
-    width: 25%;
-    border-left: 2px solid var(--white);
+    width: 22%;
+    justify-content: space-between;
 }
 
 #btn-nav button {
     padding: 1rem 2rem;
     border-radius: 15px;
     font-size: 2rem;
-    font-family: var(--subtitle-font);
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -153,7 +172,6 @@ body {
 #btn-login {
     background-color: transparent;
     border: 0.5px solid white;
-    margin-left: 40px;
 }
 #btn-login:hover {
     background-color: var(--white);
@@ -167,60 +185,40 @@ body {
     background-color: rgb(41, 120, 41);
 }
 
-#hero {
-    font-family: var(--title-font);
+#hero > * {
+    margin-bottom: 3rem;
+    width: 75%;
 }
 
-#branch1 {
-    position: relative;
-    right: -70%;
-    top: -750px;
-}
-
-#hero * {
-    font-family: var(--title-font);
-    width: 70%;
-}
-
-#hero>* {
-    margin-bottom: 2rem;
-}
-
-#hero h1 {
-    color: var(--primary-color);
-    font-size: 85px;
-    font-weight: 900;
-    text-shadow: 0 1px 15px black;
-}
-
-#hero h2,
-p {
+#hero h2,p {
     color: white;
 }
 
 #hero h2 {
-    font-size: 70px;
-    font-weight: 700;
+    font-size: 5rem;
+    font-weight: 600;
 }
 
 #hero p {
-    font-size: 30px;
+    font-size: 2.5rem;
+    font-weight: 200;
+    text-align: justify;
 }
 
 #hero-btns {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 40%;
+    justify-content: flex-start;
 }
 
-.btn {
+#hero-btns button {
     cursor: pointer;
     border-radius: 10px;
-    margin-left: 1rem;
-    font-size: 2rem;
-    font-family: var(--subtitle-font);
-    padding: 10px 20px;
+    margin-right: 2rem;
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    font-weight: 200;
+    padding: 1rem 2rem;
 }
 
 .btn-success {
@@ -242,13 +240,434 @@ p {
     color: var(--primary-color);
 }
 
+#How-it-works > * {
+    margin-bottom: 3rem;
+}
 
 
+.step-title {
+    color: var(--primary-color);
+    font-family: avar(--primary-color);
+    font-size: 3rem;
+}
+
+.step-title span {
+    color: white;
+}
+
+.step-description {
+    margin-top: 10px;
+    width: 50%;
+    color: white;
+    font-size: 1.8rem;
+    font-family: var(--primary-color);
+}
+
+/* Projects section */
+
+#projects > * {
+    margin-bottom: 3rem;
+}
+
+
+
+/* Card container */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* to not stay in a single line */
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+/* Individual card styling */
+.card {
+    width: 30%;
+    min-height: 60dvh;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(47, 47, 53, 0.8);
+}
+
+/* Card content */
+.card-img {
+    max-height: 29dvh;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.card-title {
+    font-size: 2.5rem;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    margin-top: 2rem;
+    color: var(--primary-color);
+}
+
+.card-description {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--white);
+    font-family: var(--primary-font);
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.btn-learn {
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-family: var(--primary-font);
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: white;
+    transition: 0.3s ease;
+}
+
+.btn-learn:hover {
+    background-color:rgb(17, 88, 17)
+}
+
+/* Success Stories and Testimonials Section */
+
+#success-stories > * {
+    margin-bottom: 3rem;
+}
+
+/* Success Stories Section */
+.success-stories-section {
+    padding: 50px;
+    border-radius: 12px;
+    color: white; /* Ensure text is readable against the dark background */
+}
+
+
+.story-container {
+    display: flex; /* Use flexbox for a horizontal layout */
+    flex-wrap: wrap; /* Allow items to wrap for smaller screens */
+    justify-content: center; /* Center the stories */
+    gap: 20px; /* Space between cards */
+}
+
+.story-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s; /* Smooth scaling effect */
+    width: 300px; /* Fixed width for cards */
+}
+
+.story-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.story-img {
+    width: 100%;
+    min-height: 25vh; /* Fixed height for images */
+    object-fit: cover; /* Ensure images cover the area */
+}
+
+.story-title {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 15px 0;
+}
+
+.story-description {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    padding: 0 15px; /* Padding for better readability */
+    margin-bottom: 20px; /* Space at the bottom of the description */
+}
+
+
+/* Educational Resources Section */
+.educational-resources-section {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.educational-resources-section h2 {
+    font-size: 28px;
+    color: #3A6F7A;
+    margin-bottom: 20px;
+}
+
+.resource-item {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.resource-item h3 {
+    font-size: 20px;
+    color: #3A6F7A;
+}
+
+.resource-item p {
+    color: #555;
+}
+
+.resource-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #3A6F7A;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.resource-item a:hover {
+    background-color: #2b585d;
+}
+
+/* Sustainability Tips Section */
+.sustainability-tips-section {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.sustainability-tips-section h2 {
+    font-size: 28px;
+    color: #3A6F7A;
+    margin-bottom: 20px;
+}
+
+.eco-friendly-practices,
+.resource-guides,
+.challenges,
+.community-contributions,
+.newsletter-signup {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.eco-friendly-practices h3,
+.resource-guides h3,
+.challenges h3,
+.community-contributions h3,
+.newsletter-signup h3 {
+    font-size: 24px;
+    color: #3A6F7A;
+}
+
+.eco-friendly-practices ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.eco-friendly-practices li {
+    margin: 10px 0;
+}
+
+.newsletter-signup input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter-signup button {
+    padding: 10px 15px;
+    background-color: #3A6F7A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-signup button:hover {
+    background-color: #2b585d;
+}
+
+
+
+/* Stat section */
+
+#stat > * {
+    margin-bottom: 3rem;
+}
+
+.stat-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    width: 30%;
+    min-width: 250px; 
+    margin: 1rem;
+    transition: transform 0.3s;
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+}
+
+.stat-title {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.stat-value {
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.fas {
+    color: white; /* Customize color */
+    font-size: 6rem; /* Adjust size */
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    width: 90%;
+    padding-top: 50px;
+    color: white;
+    text-align: left;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 20px;
+    width: 100%;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+}
+
+.footer-title {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    color: white;
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.social-icons a {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 51, 25, 0.7);
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+}
 
 
 /*RESPONSIVENESS*/
 
-
+/* Navbar responsiveness */
+@media (max-width: 1470px) {
+    html {
+        font-size: 9px;
+    }
+}
 
 
 
@@ -316,4 +735,23 @@ p {
 /* Extra-large screens */
 @media only screen and (min-width: 1921px) {
     /* Styles for extra-large screens */
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        padding: 20px 0;
+    }
+
+    .footer-links {
+        display: inline-block;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+    }
 }

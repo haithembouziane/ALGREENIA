@@ -1,0 +1,320 @@
+body {
+    background-image: url('../images/background10.jpg');
+}
+
+/* General styling classes */
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sp-around-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.border {
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(18px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 54px;
+    color: white;
+    font-weight: 800;
+}
+
+/* Key Statistics */
+
+.key-statistics {
+    padding: 20px;
+}
+
+.stats-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.stat-card {
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+}
+
+.stat-card img {
+    min-height: 80%;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.stat-card h3 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #2980b9;
+}
+
+.stat-card p {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Goals vs Achievements Section */
+
+.progress-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.progress {
+    position: relative;
+    width: 18vw; 
+    height: 18vw; 
+    max-width: 300px; 
+    border-radius: 50%;
+    background: conic-gradient(
+        var(--clr) calc(var(--i) * 1%), 
+        rgba(255, 255, 255, 0.2) calc(var(--i) * 1%)
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.5s ease, height 1s ease;
+}
+
+.progress:hover {
+    width: 20vw;
+    height: 20vw;
+}
+
+.progress::before {
+    content: '';
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    background-color: rgba(240, 255, 240, 0.8);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.9);;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.progress h3 {
+    position: absolute;
+    font-size: 3rem;
+    z-index: 2;
+    margin: 0;
+    color: black;
+}
+
+.progress h4 {
+    position: absolute;
+    font-size: 2rem;
+    color: black;
+    width: 70%;
+    bottom: 20%;
+    margin-top: 5px;
+    text-align: center;
+    z-index: 2;
+    margin: 0;
+}
+
+.user-contributions {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.motivation {
+    font-size: 4em;
+    color: blanchedalmond;
+    margin-bottom: 1.5em;
+}
+
+.contributors-list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contributor {
+    width: 40%;
+    padding: 1em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+    justify-content: space-around;
+}
+
+.contributor:hover {
+    transform: scale(1.05);
+}
+
+.rank {
+    font-size: 3rem;
+    display: block;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+}
+
+.location {
+    font-size: 2rem;
+    color: white;
+    margin-top: 0.3rem;
+    display: block;
+}
+
+.trees {
+    font-size: 2rem;
+    color: white;
+    margin-top: 0.5em;
+}
+
+.special {
+    margin-bottom: 10px;
+}
+
+.contributor img {
+    width: 50%; 
+    aspect-ratio: 0.5 / 0.5;
+    border-radius: 50%;
+    object-fit: cover; 
+    margin: 0.5em 0; 
+}
+
+.gold {
+    color: #FFD700;
+}
+
+.silver {
+    color: #b4adad;
+}
+
+.bronze {
+    color: #CD7F32;
+}
+
+/* RESPONSIVENESS */
+
+/* Some adjustements for screen sizes < 1024px */
+
+@media (max-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title {
+        font-size: 5rem;
+    }
+
+    .stat-card h3 {
+        font-size: 3rem;
+    }
+
+    .stat-card p {
+        font-size: 3rem;
+    }
+
+    .contributor {
+        width: 50%;
+    }
+
+    .motivation {
+        font-size: 3.5rem;
+    }
+}
+
+/* Impact track Medium Screen Responsiveness */
+
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card h3 {
+        font-size: 5rem;
+    }
+
+    .stat-card p {
+        font-size: 4.5rem;
+    }
+
+    .contributor {
+        width: 50%;
+    }
+
+    .motivation {
+        font-size: 3rem;
+    }
+
+    .rank, .name, .location, .trees {
+        font-size: 2.5rem;
+    }
+}
+
+/* Medium screens (2x2 layout) for Goals vs Achievements bubles */
+
+@media (max-width: 1024px) {
+    .progress-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-items: center;
+    }
+    
+    .progress {
+        width: 35vw;
+        height: 35vw;
+    }
+
+    .progress:hover {
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+/* Small screens (1x4 layout) for Goals vs Achievements bubles */
+
+@media (max-width: 600px) {
+    .progress-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .progress {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .progress:hover {
+        width: 65vw;
+        height: 65vw;
+    }
+}

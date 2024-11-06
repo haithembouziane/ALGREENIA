@@ -29,14 +29,12 @@
             </div>
 
         </section>
-        <!-- <img src="..\images\branch4.png" alt="branch" id="branch1"> -->
 
         <section id="How-it-works" class="glass-theme">
             <h2 class="section-title">How Algreenia works</h2>
             <p class="short-description">
                 Algreenia connects communities across Algeria to impactful afforestation initiatives. Our platform empowers individuals and organizations to participate in tree-planting projects, providing the tools and resources needed to restore and preserve our green spaces. Join us in cultivating a sustainable future, one tree at a time!
             </p>
-            <!-- Steps -->
 
             <!-- Some images provided below are temporary -->
             <div class="card-container">
@@ -151,18 +149,18 @@
             <div class="story-container">
                 <div class="story-card">
                     <img class="story-img" src="./images/story1.jpeg" alt="Story Image">
-                    <h3 class="story-title">Community Greening Initiative in Oran</h3>
-                    <p class="story-description">"Our neighborhood has transformed into a green oasis thanks to Algreenia's support and guidance!" – Participant Name</p>
+                    <h3 class="story-title">Planting 505 Trees in M'sila</h3>
+                    <p class="story-description">In just one day, we united six provinces for a greener Algeria! </p>
                 </div>
                 <div class="story-card">
                     <img class="story-img" src="./images/story2.jpeg" alt="Story Image">
-                    <h3 class="story-title">Restoring Biodiversity in Djelfa</h3>
-                    <p class="story-description">"Thanks to the afforestation efforts, we have seen a significant return of local wildlife." – Participant Name</p>
+                    <h3 class="story-title">1,720 Trees in Oued Souf</h3>
+                    <p class="story-description">Now, ten of these trees proudly bear my name!</p>
                 </div>
                 <div class="story-card">
                     <img class="story-img" src="./images/story3.jpeg" alt="Story Image">
-                    <h3 class="story-title">Restoring Biodiversity in Djelfa</h3>
-                    <p class="story-description">"Thanks to the afforestation efforts, we have seen a significant return of local wildlife." – Participant Name</p>
+                    <h3 class="story-title">1,303 Trees in El Bayadh</h3>
+                    <p class="story-description">Our province is now greener than ever thanks to Algreenia!</p>
                 </div>
             </div>
         </section>
@@ -173,7 +171,7 @@
             <p class="short-description">Learn how you can contribute to afforestation efforts and help create a sustainable future.</p>
             
             <div class="resource-container">
-                <!-- Guide Download Card -->
+
                 <div class="resource-card glass-theme">
                     <img class="resource-img" src="./images/guide.jpeg" alt="Planting Guide">
                     <h3 class="resource-title">Tree Planting Guide</h3>
@@ -181,7 +179,6 @@
                     <a href="https://treecouncil.org.uk/wp-content/uploads/2019/12/Tree-planting-guide-2019-updates_1.pdf" download class="btn-learn">Download Guide</a>
                 </div>
                 
-                <!-- Video Card -->
                 <div class="resource-card glass-theme">
                     <div>
                         <h3 class="resource-title">Why Trees Matter</h3>
@@ -288,7 +285,6 @@
                         <h1 class="tip-title">Limit Shower Time</h1>
                         <p>Try setting a 5-minute timer to reduce water usage.</p>
                     </div>
-                    <!-- Add more .tip-card items as needed -->
                 </div>
             </div>
 
@@ -301,8 +297,6 @@
     <?php
         include "./includes/footer.php" 
     ?>
-<!-- 
-    <script src="./Scripts/home.js"></script> -->
 
 </body>
 </html>

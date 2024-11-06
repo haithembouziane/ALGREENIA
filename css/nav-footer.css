@@ -39,7 +39,7 @@ html {
 body {
     font-family: var(--primary-font);
     background-color: antiquewhite;
-    background-image: url('../images/background11.jpg');
+    background-image: url('../images/background.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -94,11 +94,8 @@ body {
     margin-bottom: 3rem;
 }
 
-/*to be replaced with a real logo*/
-.logo h1 {
-    color: var(--primary-color);
-    font-size: 3rem;
-    font-weight: 700;
+.logo {
+    width: 20%;
 }
 
 /* Header */
@@ -183,6 +180,44 @@ body {
     background-color: rgb(41, 120, 41);
 }
 
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none; 
+    padding: 1rem 0;
+    width: max-content;
+    min-width: 180px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(100px);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    width: 100%;
+}
+
+.dropdown-menu .links {
+    color: var(--white);
+    font-size: 2rem;
+    padding: 0.8rem 1.6rem;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+/* Show Dropdown Menu */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 /* Sidebar Styling */
 .sidebar {
     position: fixed;
@@ -252,6 +287,29 @@ body {
     font-size: 3rem;
     color: var(--white);
     margin-right: 10px;
+}
+
+#sidebar-links .service-submenu {
+    list-style-type: none;
+    padding-left: 10px; 
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#sidebar-links .service-submenu .links {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--white);
+}
+
+#sidebar-links .service-submenu .links::after {
+    content: none;
+} 
+
+#sidebar-links .service-submenu .links:hover {
+    color: var(--primary-color);
 }
 
 /* The Sidebar is shown when the user clicks on the hamburger icon */

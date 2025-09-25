@@ -9,9 +9,9 @@ ALGREENIA is a comprehensive environmental web application that serves as a digi
 ## ✨ Features
 
 - **Environmental Dashboard**: Track local environmental metrics and initiatives
-- **Community Platform**: Connect with eco-friendly organizations and individuals
-- **Resource Library**: Access environmental guides, tips, and best practices
-- **Project Showcase**: Display ongoing environmental projects across Algeria
+-  **Irrigation Tracker** : Monitor & Manage irrigation schedules for newly planted trees
+- **Identify Tree Types**: Upload an Image to Identify Tree Types using AI
+- **Impact tracker** 
 - **Responsive Design**: Mobile-friendly interface for accessibility
 
 ## 🛠️ Technology Stack
